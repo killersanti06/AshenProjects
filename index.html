@@ -1,49 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Botones de Descarga y Redes Sociales</title>
+  <title>BOTAPROJECTS</title>
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
-    }
-    .btn {
-      display: inline-block;
-      padding: 12px 20px;
-      margin: 10px;
-      font-size: 16px;
-      text-decoration: none;
-      border-radius: 5px;
+      background: url('minecraft-background.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: #fff;
-      transition: background-color 0.3s;
     }
-    .download {
-      background-color: #28a745;
+    header {
+      background-color: rgba(0,0,0,0.7);
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
-    .download:hover {
-      background-color: #218838;
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #00ffcc;
     }
-    .social {
-      background-color: #007bff;
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
     }
-    .social:hover {
-      background-color: #0056b3;
+    nav a:hover {
+      color: #00ffcc;
+    }
+    .icons {
+      margin-left: auto;
+    }
+    .icons a {
+      margin: 0 5px;
+      color: #fff;
+      text-decoration: none;
+      font-size: 20px;
+    }
+    main {
+      background-color: rgba(0,0,0,0.6);
+      margin: 40px auto;
+      padding: 20px;
+      width: 80%;
+      border-radius: 10px;
+    }
+    h2 {
+      color: #00ffcc;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin: 10px 0;
+      font-size: 18px;
+    }
+    .download-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #00ffcc;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+    .download-btn:hover {
+      background-color: #00cc99;
     }
   </style>
 </head>
 <body>
-  <h1>Descargas y Redes Sociales</h1>
+  <header>
+    <h1>BOTAPROJECTS</h1>
+    <nav>
+      <a href="#">Discord Host</a>
+      <a href="#">OptiChina</a>
+      <a href="#">Otros</a>
+    </nav>
+    <div class="icons">
+      <a href="#">YouTube</a>
+      <a href="#">Discord</a>
+    </div>
+  </header>
 
-  <!-- Botón de descarga -->
-  <a href="archivo.zip" class="btn download" download>Descargar Archivo</a>
-
-  <!-- Botones de redes sociales -->
-  <a href="https://www.facebook.com" target="_blank" class="btn social">Facebook</a>
-  <a href="https://www.twitter.com" target="_blank" class="btn social">Twitter</a>
-  <a href="https://www.instagram.com" target="_blank" class="btn social">Instagram</a>
-  <a href="https://www.linkedin.com" target="_blank" class="btn social">LinkedIn</a>
+  <main>
+    <h2>Otros proyectos</h2>
+    <ul>
+      <li>Minecraft Classic portable y optimizado</li>
+      <li>Minecraft 1.8.8 WEB</li>
+    </ul>
+    <a href="#" class="download-btn">Descargar</a>
+  </main>
 </body>
 </html>
