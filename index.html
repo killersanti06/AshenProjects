@@ -2,17 +2,16 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>BOTAPROJECTS</title>
+  <title>AshenProjects</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('minecraft-background.jpg') no-repeat center center fixed;
-      background-size: cover;
+      background-color: #1e1e1e;
       color: #fff;
     }
     header {
-      background-color: rgba(0,0,0,0.7);
+      background-color: #333;
       padding: 10px 20px;
       display: flex;
       justify-content: space-between;
@@ -21,56 +20,46 @@
     header h1 {
       margin: 0;
       font-size: 24px;
-      color: #00ffcc;
+      color: #ff4444;
+    }
+    nav {
+      display: flex;
+      gap: 15px;
     }
     nav a {
-      margin: 0 15px;
+      background-color: #ff4444;
+      padding: 8px 12px;
+      border-radius: 20px;
       text-decoration: none;
       color: #fff;
       font-weight: bold;
     }
-    nav a:hover {
-      color: #00ffcc;
+    .social {
+      display: flex;
+      gap: 10px;
     }
-    .icons {
-      margin-left: auto;
-    }
-    .icons a {
-      margin: 0 5px;
+    .social a {
       color: #fff;
       text-decoration: none;
-      font-size: 20px;
+      font-weight: bold;
     }
     main {
-      background-color: rgba(0,0,0,0.6);
-      margin: 40px auto;
-      padding: 20px;
-      width: 80%;
-      border-radius: 10px;
+      padding: 30px;
+    }
+    section {
+      margin-bottom: 40px;
     }
     h2 {
-      color: #00ffcc;
+      color: #ff4444;
+      margin-bottom: 10px;
     }
     ul {
       list-style: none;
       padding: 0;
     }
     ul li {
-      margin: 10px 0;
+      margin: 8px 0;
       font-size: 18px;
-    }
-    .download-btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
-      background-color: #00ffcc;
-      color: #000;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-    .download-btn:hover {
-      background-color: #00cc99;
     }
   </style>
 </head>
@@ -78,12 +67,12 @@
   <header>
     <h1>AshenProjects</h1>
     <nav>
-      <a href="#">Programas</a>
-      <a href="#">Juegos</a>
-      <a href="#">Minecraft</a>
-      <a href="#">Series de TV</a>
+      <a href="#programas">Programas</a>
+      <a href="#juegos">Juegos</a>
+      <a href="#minecraft">Minecraft</a>
+      <a href="#series">Series de TV</a>
     </nav>
-    <div class="icons">
+    <div class="social">
       <a href="#">YouTube</a>
       <a href="#">Discord</a>
       <a href="#">Instagram</a>
@@ -91,12 +80,37 @@
   </header>
 
   <main>
-    <h2>Otros proyectos</h2>
-    <ul>
-      <li>Minecraft Classic portable y optimizado</li>
-      <li>Minecraft 1.8.8 WEB</li>
-    </ul>
-    <a href="#" class="download-btn">Descargar</a>
+    <section id="programas">
+      <h2>Programas</h2>
+      <ul>
+        <li>Editor de texto ligero</li>
+        <li>Compresor de archivos rápido</li>
+      </ul>
+    </section>
+
+    <section id="juegos">
+      <h2>Juegos</h2>
+      <ul>
+        <li>Juego de plataformas retro</li>
+        <li>Simulador de vuelo básico</li>
+      </ul>
+    </section>
+
+    <section id="minecraft">
+      <h2>Minecraft</h2>
+      <ul>
+        <li>Modpack personalizado</li>
+        <li>Servidor optimizado para LAN</li>
+      </ul>
+    </section>
+
+    <section id="series">
+      <h2>Series de TV</h2>
+      <ul>
+        <li>Lista de episodios recomendados</li>
+        <li>Guía de temporadas</li>
+      </ul>
+    </section>
   </main>
 </body>
 </html>
